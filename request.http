@@ -1,0 +1,28 @@
+### Get All Players
+GET http://localhost:3000/players HTTP/1.1
+
+### Get Player By Id
+GET http://localhost:3000/players/64760e1d1114160a8521dea8
+
+###
+POST http://localhost:3000/players HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "test",
+  "dateOfBirth": "1990-01-01",
+  "nationality": "test",
+  "battingStyle": "test",
+  "bowlingStyle": "test"
+}
+
+### Update Player
+PUT http://localhost:3000/players/64760e1d1114160a8521dea8 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Mercedes Hermiston - Update"
+}
+
+### Delete Player
+DELETE http://localhost:3000/players/64760e1d1114160a8521dea8 HTTP/1.1
